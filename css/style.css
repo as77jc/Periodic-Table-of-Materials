@@ -1,0 +1,474 @@
+html{
+    --Backgound-color: #f0efeb
+}
+
+body {
+    background-color: var(--Backgound-color);
+    width: 1200px;
+    height: 1000px;
+    /* border: white solid 5px; */
+    margin: 10px auto;
+}
+
+li {
+    margin-bottom: -15px    
+}
+
+p {
+    margin-left: 25px;
+    font-family: "Audiowide", sans-serif;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.toppage {
+    //width: 350px;
+    height: 270px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid 4px #000;
+    
+}
+
+.toppage h1 {
+    margin-top: 80px;
+    margin-left: 20px;
+    color: #013a63;
+    font-family: "Audiowide", sans-serif;
+    font-size: 38px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.toppage span {
+    color: #2c7da0;
+    font-size: 60px;
+}
+
+.index {  
+    width: 300px;
+    //height: 270px;
+    /* border: solid black 2px; */
+}
+
+.index .line {
+    margin-top: 0px;
+    width: 240px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: -25px;  
+}
+
+.tabel {
+    background-color: white;
+    
+    width: 950px;
+    height: 650px;
+    margin: 50px auto;
+    
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.tabel div{ 
+    //width: 50px;
+    //height: 50px;   
+}
+
+.empty {
+    width: 50px;
+    height: 50px;
+    background-color: var(--Backgound-color);
+}
+
+.notempty {
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    font-size: 10px;
+}
+
+.title {
+    
+    width: 50px;
+    height: 50px;
+    
+    font-family: "Audiowide", sans-serif;
+    font-size: 30px;
+    color: #1d3557;
+    
+    background-color: var(--Backgound-color);
+}
+
+.atomicnumber {
+    color: #ef233c;
+    
+    width: 48px;
+    height: 48px;
+    margin: 1px 1px;
+       
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    
+    border-radius: 5px;
+    
+}
+
+.atomnum {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.atomicnumber h2 {
+    color: #004b23;
+    font: bold 25px/0px Trirong, sans-serif;
+    margin-top: .5em;
+    transition: .5s;
+}
+
+.atomicnumber h2:hover {
+    color: aqua;
+    font: bold 23px/0px Audiowide, sans-serif;  
+    cursor: pointer; 
+}
+
+.overlay {
+    background-color: #fff;
+    margin: auto; 
+    padding: 1rem;
+    width: 1100px;
+    height: 660px;
+    font-family: Audiowide, sans-serif; 
+}
+
+
+
+/* ////////////////////
+    title layers 
+  /////////////////// */
+
+.overlay-title {
+    display: flex;
+    background: rgba(255, 255, 0, 0.05);
+    /* flex-direction: column; */
+    text-align: center;
+    padding: 15px;
+    height: 120px;
+    border-bottom: solid 5px #240046;
+}
+
+.overlay-elementSymbol {
+    width: 23%;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+
+.overlay-elementSymbol h1 {
+    margin: 10px;
+}
+
+.overlay-elementName {
+    width: 44%;
+    font-size: 45px;
+    margin: auto;
+}
+
+.overlay-elementName span {
+    font-size: 65px;
+}
+
+.shortinfo {
+    width: 23%;
+    text-align: left;
+}
+
+.shortinfo p {
+    margin: 0;
+}
+
+.shortinfo .rightside {
+    /* text-align: right; */
+    padding-left: 80px;
+}
+
+.x p {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 10px #000;
+    color: #fff;
+    font-size: 20px;
+    margin: -25px -25px 0 -5px;
+    padding: 0;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.x p:hover {
+    box-shadow: none;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+/* ////////////////////
+    final information 
+  /////////////////// */
+  
+.otherInfo {
+    height: 200px;
+
+}
+
+
+
+.lastLayer {
+    display: flex;
+}
+
+.atomLayer {
+    width: 60%;
+}
+
+.finalInfo {
+    width: 40%;
+    /* margin: 0; */
+}
+
+.finalInfo p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.elec {
+    display: flex;
+    margin: 0;
+}
+
+/* ////////////////////
+    summary 
+  /////////////////// */
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    margin-top: 0px;
+    padding: 0 15px 0px 15px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ////////////////////
+    Next & Previos BTN 
+  /////////////////// */
+  
+.prv-nxt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn p {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 10px #000;
+    color: #fff;
+    font-size: 25px;
+    margin: 12px 20px 8px 20px;
+    padding: 0 9px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn p:hover {
+    box-shadow: none;
+    transform: scale(0.95);
+}
+
+.disable p {
+    cursor: default;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Atom layers */
+
+.layers {
+    display: flex;
+    margin: auto;
+    height: 70%; 
+    padding-right: 2%;
+}
+
+.seed {
+    background: #370617;
+    width: 170%;
+    color: #a9d6e5;
+    padding: 9px 0;
+}
+
+.layer1 {
+    background: #6a040f;
+    width: 160%;
+    color: #a9d6e5;
+    padding: 9px 0;
+}
+
+.layer2 {
+    background: #9d0208;
+    width: 150%;
+    color: #a9d6e5;
+    padding: 9px 0;
+}
+
+.layer3 {
+    background: #d00000;
+    width: 140%;
+    color: #a9d6e5;
+    padding: 9px 0;
+}
+
+.layer4 {
+    background: #dc2f02;
+    width: 130%;
+    color: #a9d6e5;
+    padding: 9px 0;
+}
+
+.layer5 {
+    background: #e85d04;
+    width: 120%;
+    color: #a9d6e5;
+    padding: 9px 0;
+}
+
+.layer6 {
+    background: #f48c06;
+    width: 110%;
+    color: #a9d6e5;
+    padding: 9px 0;
+}
+
+.layer7 {
+    background: #faa307;
+    width: 100%;
+    color: #012a4a;
+    padding: 9px 0;
+}
+
+.layer8 {
+    background: #ffba08;
+    width: 90%;
+    color: #000;
+    padding: 9px 0;
+}
+
+/* ////////////////////
+    Group Element Color 
+  /////////////////// */
+
+
+.exception {
+    background-color: #abc4ff;
+}
+
+.alkaliMetals {
+    background-color: #ff7aa2;    
+}
+
+.alkalineMetals {
+    background-color: #f1c488;    
+}
+
+.otherMetals {
+    background-color: #ffd66f;    
+}
+
+.transitionMetals {
+    background-color: #efea5a;    
+}
+
+.lanthanoids {
+    background-color: #ccff33;    
+}
+
+.actinoids {
+    background-color: #9ef01a;    
+}
+
+.metalloids {
+    background-color: #16db93;    
+}
+
+.nonmetals {
+    background-color: #3a86ff;    
+}
+
+.hologens {
+    background-color: #ff69eb;    
+}
+
+.nobleGases {
+    background-color: #a9def9;    
+}
+
+.unknowElements {
+    background-color: #acb0bd;    
+}
+
+/* text color */
+
+.exception-text {
+    color: #abc4ff;
+}
+
+.alkaliMetals-text {
+    color: #ff7aa2;    
+}
+
+.alkalineMetals-text {
+    color: #f1c488;    
+}
+
+.otherMetals-text {
+    color: #ffd66f;    
+}
+
+.transitionMetals-text {
+    color: #efea5a;    
+}
+
+.lanthanoids-text {
+    color: #ccff33;    
+}
+
+.actinoids-text {
+    color: #9ef01a;    
+}
+
+.metalloids-text {
+    color: #16db93;    
+}
+
+.nonmetals-text {
+    color: #3a86ff;    
+}
+
+.hologens-text {
+    color: #ff69eb;    
+}
+
+.nobleGases-text {
+    color: #a9def9;    
+}
+
+.unknowElements-text {
+    color: #acb0bd;    
+}
