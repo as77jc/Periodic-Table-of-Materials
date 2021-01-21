@@ -2,7 +2,7 @@
 /// import pattern of table and all elements information include groups from files
 //////////////////////////////////////////////////////////////////////////////
 
-import { elements } from '../elements/elements.js';
+import { elements } from "../elements/elements.js";
 import { pattern } from '../elements/pattern.js';
 import { exception, alkaliMetals, alkalineMetals, otherMetals, transitionMetals, lanthanoids, actinoids, metalloids, nonmetals, hologens, nobleGases, unknowElements } from '../elements/materialGroups.js';
 
