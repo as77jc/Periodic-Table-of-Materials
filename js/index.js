@@ -47,13 +47,13 @@ for (let ele in pattern){
                 <p class='atomnum'>${pattern[ele]}</p>
                 <h2 title='${elements[index].name}'>
                 ${elements[index].symbol}
-                </h2>`
+                </h2>`;
                                
             tableArray[ele].querySelector('h2').addEventListener('click', () => {
                 // console.log(tableArray[ele].classList[tableArray[ele].classList.length - 1])
                 // returne atomic number & materialGroup CSS class
                 
-                elementInfo(pattern[ele], tableArray[ele].classList[tableArray[ele].classList.length - 1])
+                elementInfo(pattern[ele], tableArray[ele].classList[tableArray[ele].classList.length - 1]);
             })
             
 //////////////////////////////////////////////////////////////////////////////
@@ -90,7 +90,7 @@ for (let ele in pattern){
 //////////////////////////////////////////////////////////////////////////////
 
 const elementInfo = (atomNum, materialGroup) => {
-    console.log(atomNum, materialGroup)
+    //console.log(atomNum, materialGroup)
     const chemicalElement = elements[atomNum-1]
     const overlay = document.createElement('div')
   
